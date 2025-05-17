@@ -25,7 +25,7 @@ exports.handler = async (req, res) => {
   try {
     // Insert data into the 'survey_responses' table
     const { data, error } = await supabase
-      .from('Wyniki')
+      .from('wyniki') // lowercase
       .insert([
         {
           created_at: new Date().toISOString(),
