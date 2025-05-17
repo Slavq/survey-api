@@ -28,7 +28,7 @@ exports.handler = async (req, res) => {
       .from('Wyniki')
       .insert([
         {
-          text_data: textData,
+          wynik: textData,
           created_at: new Date().toISOString()
         }
       ]);
