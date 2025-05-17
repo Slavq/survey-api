@@ -23,6 +23,7 @@ exports.handler = async (req, res) => {
     textData = JSON.stringify(textData);
   }
   
+  console.log("WTFFFFFFFFFFFF");
   console.log("Received data:", textData);
   
   try {
