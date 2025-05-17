@@ -28,10 +28,10 @@ exports.handler = async (req, res) => {
       .from('Wyniki')
       .insert([
         {
-          created_at: new Date().toISOString(),
+          //created_at: new Date().toISOString(),
 		  wynik: textData
         }
-      ]);
+      ], { returning: 'representation' });
 
     if (error) {
       console.error("Supabase error:", error);
