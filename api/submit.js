@@ -25,7 +25,7 @@ exports.handler = async (req, res) => {
   try {
     // Insert data into the 'survey_responses' table
     const { data, error } = await supabase
-      .from('wyniki')
+      .from('Wyniki')
       .insert([
         {
           text_data: textData,
